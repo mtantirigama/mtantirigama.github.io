@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - mtantirigama
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
+  - mtantirigama/3_photon_ephys
+  - mtantirigama/eyeTrack
+  - mtantirigama/plugin-GUI
+  - mtantirigama/analysis-tools
+  - mtantirigama/lsmaq
   - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
