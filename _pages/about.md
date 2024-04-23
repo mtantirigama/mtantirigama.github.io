@@ -5,13 +5,13 @@ permalink: /
 subtitle:  Explorer of the world within and around me through data
 profile:
   align: right
-  image: Profile_pic.jpg
+  image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   address: >
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
 I am a PhD with 10 years of experience working with data in a biological environment. I create software in several programming languages including Python, MATLAB, and R.  
