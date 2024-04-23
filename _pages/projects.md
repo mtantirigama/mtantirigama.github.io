@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Passion projects
+title: passion projects
 permalink: /projects/
 description: A collection of fun projects.
 nav: true
