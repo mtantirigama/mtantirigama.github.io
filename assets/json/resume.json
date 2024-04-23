@@ -1,8 +1,19 @@
 {
   "basics": {
     "name": "Malinda Tantirigama PhD",
-    "position": "Scientist",
+    "label": "Scientist",
+    "image": "",
+    "email": "",
+    "phone": "",
+    "url": "",
     "summary": "Dedicated academic professional with 10 years of experience, adept at leveraging programming expertise for data acquisition, analysis, visualisation, and reporting",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
     "profiles": [
       {
         "network": "Twitter",
@@ -75,7 +86,7 @@
         "Premier)"
       ]
     }
-  ],  
+  ],
   "education": [
     {
       "institution": "University of Otago",
@@ -95,6 +106,45 @@
       "endDate": "2008",
       "score": "10",
     }
+  ],  
+  "volunteer": [
+    {
+      "organization": "",
+      "location": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "url": "",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "",
+      "date": "",
+      "issuer": "",
+      "url": "",
+      "icon": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
+    }
   ],
   "languages": [
     {
@@ -106,6 +156,32 @@
       "language": "Sinhala",
       "fluency": "Fluent",
       "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "",
+      "icon": "",
+      "keywords": [
+        ""
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "icon": "f",
+      "reference": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "summary": "",
+      "highlights": ["", ""],
+      "startDate": "",
+      "endDate": "",
+      "url": ""
     }
   ]
 }
