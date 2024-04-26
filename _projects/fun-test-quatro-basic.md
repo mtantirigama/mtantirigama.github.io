@@ -21,7 +21,7 @@ related_publications: true
 For a demonstration of a line plot on a polar axis, see
 <a href="#fig-polar" class="quarto-xref">Figure 1</a>.
 
-![](Quarto_tutorial_files/figure-commonmark/fig-polar-output-1.png)
+![](assets/img/quatro/fig-polar-output-1.png)
 
 ### With echo on to show code only for this cell
 
@@ -36,7 +36,7 @@ ax.grid(True)
 plt.show()
 ```
 
-![](Quarto_tutorial_files/figure-commonmark/cell-3-output-1.png)
+![](assets/img/quatro/cell-3-output-1.png)
 
 ## subplot with sub-captions
 
@@ -52,7 +52,7 @@ plt.show()
 <div class="cell-output cell-output-display column-page">
 
 <img
-src="Quarto_tutorial_files/figure-commonmark/fig-gapminder-output-1.png"
+src="assets/img/quatro/fig-gapminder-output-1.png"
 data-ref-parent="fig-gapminder" />
 
 </div>
@@ -60,7 +60,7 @@ data-ref-parent="fig-gapminder" />
 <div class="cell-output cell-output-display column-page">
 
 <img
-src="Quarto_tutorial_files/figure-commonmark/fig-gapminder-output-2.png"
+src="assets/img/quatro/fig-gapminder-output-2.png"
 data-ref-parent="fig-gapminder" />
 
 </div>
@@ -74,13 +74,13 @@ data-ref-parent="fig-gapminder" />
 >
 > an example of ‘tip’.
 
-![Elephant](prof_pic.jpg)
+![Elephant](assets/img/prof_pic_color.jpg)
 
-<img src="prof_pic.jpg" data-ref-parent="fig-me" />
+<img src="assets/img/prof_pic_color.jpg" data-ref-parent="fig-me" />
 
-<img src="prof_pic.jpg" data-ref-parent="fig-me" />
+<img src="assets/img/prof_pic_color.jpg" data-ref-parent="fig-me" />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/afql9dbjcq0?si=v3vZUdE_b1wHGk6V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 
-[![](prof_pic.jpg)](https://en.wikipedia.org/wiki/Elephant)
+[![](assets/img/prof_pic_color.jpg)](https://en.wikipedia.org/wiki/Elephant)
 
