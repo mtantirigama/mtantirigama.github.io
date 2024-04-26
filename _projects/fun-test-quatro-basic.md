@@ -74,13 +74,13 @@ data-ref-parent="fig-gapminder" />
 >
 > an example of ‘tip’.
 
-![Elephant](../assets/img/prof_pic_color.jpg)
+![Elephant](/assets/img/prof_pic_color.jpg)
 
-<img src="f1/prof_pic2.jpg" data-ref-parent="fig-me" />
+<img src="/assets/img/prof_pic2.jpg" data-ref-parent="fig-me" />
 
-<img src="prof_pic_color.jpg" data-ref-parent="fig-me" />
+<img src="/assets/img/prof_pic_color.jpg" data-ref-parent="fig-me" />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/afql9dbjcq0?si=v3vZUdE_b1wHGk6V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 
-[![](f1/prof_pic2.jpg)](https://en.wikipedia.org/wiki/Elephant)
+[![](/assets/img/prof_pic_color.jpg)](https://en.wikipedia.org/wiki/Elephant)
 
