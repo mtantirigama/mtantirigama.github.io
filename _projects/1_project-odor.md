@@ -12,6 +12,8 @@ related_publications: false
 - [Grand challenge - Neural coding](#grand-challenge-Neural-coding)
 - [Movement correction](#movement-correction)
 - [Neuron segmentation](#neuron-segmentation)
+- [Neuron activity time-series](#neuron-activity-time-series)
+- [Odor maps](#odor-maps)
 
 ## Grand challenge - Neural coding
 ### The grand challenge is to understand how activity in the brain represents information about the outside world. 
@@ -47,12 +49,12 @@ Before analysis, any movement in the movie has to be corrected.
 The next step is to identify individual neurons as regions-of-interests (ROI). Then extract the changes in pixel intensity as a time-series.
 
 <img-comparison-slider>
-  {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="first" width="80%" %}
-  {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="second" width="80%" %}
+  {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
-<div class="caption">
-    Pixels are colored based on co-activity. ROIs are drawn on individual neurons (cyan lines). 
-</div>
+
+
+## Neuron activity time-series
 
 ## Odor maps
 

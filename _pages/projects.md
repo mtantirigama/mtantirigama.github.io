@@ -2,11 +2,11 @@
 layout: page
 title: passion projects
 permalink: /projects/
-description: A growing collection of cool projects i've done for <a href="#work">Work</a> or <a href="#fun">Fun</a>.
+description: 
 nav: true
 nav_order: 1
 display_categories: [work, fun]
-horizontal: false
+horizontal: true
 ---
 
 A growing collection of cool projects i've done for [Work](#work) or [Fun](#fun).
