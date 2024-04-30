@@ -3,8 +3,8 @@ layout: page
 title: fun test quatro basics
 description: fun test quatro basics with 1 pic
 img: assets/img/12.jpg
-importance: 7
-category: work
+importance: 2
+category: fun
 related_publications: false
 ---
 
