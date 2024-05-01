@@ -41,6 +41,7 @@ A microscope is used to acquire movies containing activity of neurons. This raw 
 <br>
 The challenge is to figure out how the changes in the activity of neurons encode information about the odour exposure - so that we know how neurons represent what is happening in the outside world. 
 <br><br>
+
 ---
 
 ## Movement correction
@@ -56,6 +57,7 @@ Before analysis, any movement in the movie has to be corrected.
     Data before and after correcting for movement. 
 </div>
 <br><br>
+
 ---
 
 ## Neuron segmentation
@@ -75,6 +77,7 @@ The next step is to identify individual neurons as regions-of-interests (ROI). T
     Pixels are colored based on co-activity. Then individual neurons are identified as ROIs (cyan borders). 
 </div>
 <br><br>
+
 ---
 
 ## Neuron activity time-series
@@ -90,6 +93,7 @@ The resulting time-series are noisy. So significant events (*) are captured usin
     Capture significant events using a sliding scalable template.
 </div> 
 <br><br>
+
 ---
 
 ## Odor maps
@@ -114,7 +118,9 @@ The activity of each neuron is used to identify their response during odour expo
     Neuron-odour maps representing different odours.
 </div> 
 <br><br>
+
 ---
+
 More information can be found at {% cite tantirigama2017spontaneous %}
 <br><br>
 
