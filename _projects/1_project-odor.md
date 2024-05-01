@@ -6,9 +6,6 @@ img: assets/img/project-odor/brain-smelling.png
 importance: 1
 category: work
 related_publications: false
-images:
-  compare: true
-  slider: true
 ---
 
 # Analysing odor coding from imaging data
