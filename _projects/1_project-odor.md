@@ -24,7 +24,7 @@ images:
         {% include figure.liquid path="assets/img/project-odor/brain-smelling.png" title="brainimage" class="img-fluid" %}
     </div>
     <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
-        The grand challenge is to understand how activity in the brain represents information about the outside world.{% ***ed***} 
+        The grand challenge is to understand how activity in the brain represents information about the outside world. 
     </div>
 </div>
 <br>
