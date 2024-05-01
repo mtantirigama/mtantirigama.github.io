@@ -2,7 +2,7 @@
 layout: page
 title: Analysing odor coding from imaging data
 description: Pipeline for processing imaging data to analyse how odor information is organized
-img: assets/img/publication_preview/Brain_colour2-animation3.gif
+img: assets/img/project-odor/brain.png
 importance: 1
 category: work
 related_publications: false
@@ -18,12 +18,13 @@ images:
 - [Odor maps](#odor-maps)
 
 ## Grand challenge - Neural coding
+
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/project-odor/brain-smelling.png" title="brainimage" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/project-odor/brain-smelling.png" title="brainimage" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-8 mt-3 mt-md-0">
-        ### The grand challenge is to understand how activity in the brain represents information about the outside world. 
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        'The grand challenge is to understand how activity in the brain represents information about the outside world.' 
     </div>
 </div>
 
@@ -31,7 +32,7 @@ images:
 
 A microscope is used to acquire movies containing activity of neurons. This raw data is processed to acquire information about their behavior during an event in the outside world. In this case, exposure to an odour - ethyl butyrate - which has the distinct smell of pineapple. An example movie is below showing the activity of hundreds of neurons during the exposure to the odour. 
 
-<div class="row justify-content-sm-center">
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/gcamp-with-traces.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
@@ -46,7 +47,7 @@ The challenge is to figure out how the changes in the activity of neurons encode
 
 Before analysis, any movement in the movie has to be corrected. 
 
-<div class="row justify-content-sm-center">
+<div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/movement-stacks.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
@@ -64,8 +65,22 @@ The next step is to identify individual neurons as regions-of-interests (ROI). T
   {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="first" %}
   {% include figure.liquid path="assets/img/project-odor/cell-segment-roi.png" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
+<div class="caption">
+    Pixels are colored based on co-activity. Then individual neurons are identified as ROIs (cyan borders). 
+</div>
 
 ## Neuron activity time-series
+
+The resulting time-series are noisy. So significant events (*) are captured using a sliding scalable template. This gives a matrix of [Time-of_Events, Neurons], which is used in the final analysis.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project-odor/detectevents.gif" title="templatematching" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Capture significant events using a sliding scalable template.
+</div> 
 
 ## Odor maps
 
