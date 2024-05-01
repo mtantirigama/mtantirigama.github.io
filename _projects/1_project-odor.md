@@ -6,6 +6,9 @@ img: assets/img/project-odor/brain-smelling.png
 importance: 1
 category: work
 related_publications: false
+images:
+  compare: true
+  slider: true
 ---
 
 # Analysing odor coding from imaging data
@@ -20,7 +23,7 @@ related_publications: false
 
 A microscope is used to acquire movies containing activity of neurons. This raw data is processed to acquire information about their behavior during an event in the outside world. In this case, exposure to an odour - ethyl butyrate - which has the distinct smell of pineapple. An example movie is below showing the activity of hundreds of neurons during the exposure to the odour. 
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/gcamp-with-traces.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
@@ -35,7 +38,7 @@ The challenge is to figure out how the changes in the activity of neurons encode
 
 Before analysis, any movement in the movie has to be corrected. 
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/movement-stacks.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
@@ -44,15 +47,6 @@ Before analysis, any movement in the movie has to be corrected.
     Data before and after correcting for movement. 
 </div>
 
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-    </div>
-</div>
-<div class="caption">
-    Test. 
-</div>
 
 ## Neuron segmentation
 
@@ -70,10 +64,7 @@ The next step is to identify individual neurons as regions-of-interests (ROI). T
 
 
 ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
