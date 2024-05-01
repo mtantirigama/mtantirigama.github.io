@@ -5,7 +5,7 @@ description: Pipeline for processing imaging data to analyse how odor informatio
 img: assets/img/project-odor/brain.png
 importance: 1
 category: work
-related_publications: false
+related_publications: true
 images:
   compare: true
   slider: true
@@ -24,16 +24,14 @@ images:
         {% include figure.liquid path="assets/img/project-odor/brain-smelling.png" title="brainimage" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
-        'The grand challenge is to understand how activity in the brain represents information about the outside world.' 
+        ***The grand challenge is to understand how activity in the brain represents information about the outside world.*** 
     </div>
 </div>
 
-### The grand challenge is to understand how activity in the brain represents information about the outside world. 
-
 A microscope is used to acquire movies containing activity of neurons. This raw data is processed to acquire information about their behavior during an event in the outside world. In this case, exposure to an odour - ethyl butyrate - which has the distinct smell of pineapple. An example movie is below showing the activity of hundreds of neurons during the exposure to the odour. 
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row">
+    <div class="col-sm align-items-center">
         {% include video.liquid path="assets/video/gcamp-with-traces.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
@@ -42,6 +40,8 @@ A microscope is used to acquire movies containing activity of neurons. This raw 
 </div>
 
 The challenge is to figure out how the changes in the activity of neurons encode information about the odour exposure - so that we know how neurons represent what is happening in the outside world. 
+
+---
 
 ## Movement correction
 
@@ -56,12 +56,18 @@ Before analysis, any movement in the movie has to be corrected.
     Data before and after correcting for movement. 
 </div>
 
+---
 
 ## Neuron segmentation
 
 The next step is to identify individual neurons as regions-of-interests (ROI). Then extract the changes in pixel intensity as a time-series.
 
-<img-comparison-slider>
+<style>
+  .slider-example-relative-size {
+    --default-handle-width: clamp(40px, 10vw, 200px);
+  }
+</style>
+<img-comparison-slider class="slider-example-relative-size">
   {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="first" %}
   {% include figure.liquid path="assets/img/project-odor/cell-segment-roi.png" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
@@ -69,9 +75,11 @@ The next step is to identify individual neurons as regions-of-interests (ROI). T
     Pixels are colored based on co-activity. Then individual neurons are identified as ROIs (cyan borders). 
 </div>
 
+---
+
 ## Neuron activity time-series
 
-The resulting time-series are noisy. So significant events (*) are captured using a sliding scalable template. This gives a matrix of [Time-of_Events, Neurons], which is used in the final analysis.
+The resulting time-series are noisy. So significant events (*) are captured using a sliding scalable template. This gives a matrix of '[Events, Neurons]', which is used in the final analysis.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -82,45 +90,31 @@ The resulting time-series are noisy. So significant events (*) are captured usin
     Capture significant events using a sliding scalable template.
 </div> 
 
-## Odor maps
-
-
-
 ---
 
+## Odor maps
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The activity of each neuron is used to identify their response during odour exposure. Neurons that increased their activity are color-coded as red, and neurons that decreased thier activity are color-coded as blue. Thus, an _odor map_ can be visualised for a given odorant, where a **specific odor is represented in the unique combination of neurons that were active or inactive during the odour exposure.**  
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/project-odor/map1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/project-odor/map2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/project-odor/map3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+	<div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/project-odor/map4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+    Neuron-odour maps representing different odours.
+</div> 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
+More information can be found at {% cite tantirigama2017spontaneous %}
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
