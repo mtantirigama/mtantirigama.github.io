@@ -2,7 +2,7 @@
 layout: page
 title: Analysing odor coding from imaging data
 description: Pipeline for processing imaging data to analyse how odor information is organized
-img: assets/img/project-odor/brain-smelling.png
+img: assets/img/publication_preview/Brain_colour2-animation3.gif
 importance: 1
 category: work
 related_publications: false
@@ -11,7 +11,6 @@ images:
   slider: true
 ---
 
-# Analysing odor coding from imaging data
 - [Grand challenge - Neural coding](#grand-challenge-Neural-coding)
 - [Movement correction](#movement-correction)
 - [Neuron segmentation](#neuron-segmentation)
@@ -19,6 +18,15 @@ images:
 - [Odor maps](#odor-maps)
 
 ## Grand challenge - Neural coding
+<div class="row">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/project-odor/brain-smelling.png" title="brainimage" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        ### The grand challenge is to understand how activity in the brain represents information about the outside world. 
+    </div>
+</div>
+
 ### The grand challenge is to understand how activity in the brain represents information about the outside world. 
 
 A microscope is used to acquire movies containing activity of neurons. This raw data is processed to acquire information about their behavior during an event in the outside world. In this case, exposure to an odour - ethyl butyrate - which has the distinct smell of pineapple. An example movie is below showing the activity of hundreds of neurons during the exposure to the odour. 
@@ -64,12 +72,7 @@ The next step is to identify individual neurons as regions-of-interests (ROI). T
 
 
 ---
-.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+
 
 You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
 Say you wanted to write a bit about your project before you posted the rest of the images.
