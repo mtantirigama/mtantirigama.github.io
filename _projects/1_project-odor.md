@@ -2,10 +2,13 @@
 layout: page
 title: Analysing odor coding from imaging data
 description: Pipeline for processing imaging data to analyse how odor information is organized
-img: assets/img/project-odor/brain.gif
+img: assets/img/project-odor/brain-smelling.png
 importance: 1
 category: work
 related_publications: false
+images:
+  compare: true
+  slider: true
 ---
 
 # Analysing odor coding from imaging data
@@ -22,7 +25,7 @@ A microscope is used to acquire movies containing activity of neurons. This raw 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/gcamp-with-traces.avi" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="assets/video/gcamp-with-traces.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
@@ -37,11 +40,21 @@ Before analysis, any movement in the movie has to be corrected.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/movement-stacks.avi" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="assets/video/movement-stacks.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
     Data before and after correcting for movement. 
+</div>
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+</div>
+<div class="caption">
+    Test. 
 </div>
 
 ## Neuron segmentation
@@ -50,9 +63,8 @@ The next step is to identify individual neurons as regions-of-interests (ROI). T
 
 <img-comparison-slider>
   {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="first" %}
-  {% include figure.liquid path="assets/img/project-odor/cell-segment.png" class="img-fluid rounded z-depth-1" slot="second" %}
+  {% include figure.liquid path="assets/img/project-odor/cell-segment-roi.png" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
-
 
 ## Neuron activity time-series
 
@@ -66,10 +78,10 @@ The next step is to identify individual neurons as regions-of-interests (ROI). T
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% testing column writing %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        testing column writing without curly brackets
     </div>
 </div>
 <div class="caption">
