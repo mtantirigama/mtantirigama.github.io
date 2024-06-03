@@ -1,8 +1,9 @@
 ---
 layout: page
-title: fun test quatro basics
-description: fun test quatro basics with 1 pic
-img: assets/img/12.jpg
+title: tableau dashboard
+description: cryptocurrency market overview
+img: assets/img/crypto-preview.jpg
+redirect: https://public.tableau.com/shared/QPSTQ285C?:display_count=n&:origin=viz_share_link
 importance: 2
 category: fun
 related_publications: false
