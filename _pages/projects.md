@@ -6,7 +6,7 @@ description:
 nav: true
 nav_order: 1
 display_categories: [work, fun]
-horizontal: true
+horizontal: false
 ---
 
 A growing collection of cool projects i've done for [Work](#work) or [Fun](#fun).
