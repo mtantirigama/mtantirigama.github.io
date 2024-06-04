@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Analysing odor coding from imaging data
+title: Analysing neural coding from imaging data
 description: Pipeline for processing imaging data to analyse how odor information is organized
 img: assets/img/project-odor/brain.png
 importance: 1
